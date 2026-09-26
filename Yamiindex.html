@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para mi hombrecito ❤️🏎️</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    background:#07090d;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
+}
+
+/* =========================
+   FONDO
+========================= */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    opacity:.15;
+    background-image:
+      radial-gradient(#ffffff 1px,transparent 1px);
+    background-size:35px 35px;
+}
+
+/* =========================
+   PORTADA
+========================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:25px;
+    text-align:center;
+
+    background:
+      radial-gradient(circle at 50% 20%,#16284c 0%,#090c13 55%,#050608 100%);
+}
+
+.hero-box{
+    max-width:700px;
+    width:100%;
+    padding:40px 25px;
+    border-radius:35px;
+
+    border:1px solid #263c61;
+
+    background:rgba(8,12,22,.9);
+
+    box-shadow:
+      0 0 50px rgba(0,120,255,.15),
+      inset 0 0 30px rgba(255,255,255,.02);
+}
+
+.flag{
+    font-size:35px;
+    letter-spacing:7px;
+}
+
+.tiny{
+    color:#5fb3ff;
+    letter-spacing:4px;
+    font-size:13px;
+    text-transform:uppercase;
+}
+
+.hero h1{
+    font-size:46px;
+    line-height:1.05;
+    margin:20px 0;
+}
+
+.red{
+    color:#ff3541;
+}
+
+.blue{
+    color:#51aaff;
+}
+
+.hero p{
+    font-size:19px;
+    line-height:1.8;
+    color:#ddd;
+}
+
+.heart{
+    font-size:48px;
+    margin:15px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 27px;
+
+    border-radius:30px;
+
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+
+    background:#e5232e;
+
+    box-shadow:0 8px 25px rgba(229,35,46,.3);
+}
+
+/* =========================
+   GENERAL
+========================= */
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+section{
+    padding:80px 0;
+}
+
+.title{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:40px;
+}
+
+.title span{
+    color:#4faaff;
+}
+
+/* =========================
+   FOTO GRANDE
+========================= */
+
+.main-photo{
+    position:relative;
+    overflow:hidden;
+
+    border-radius:30px;
+    padding:8px;
+
+    background:linear-gradient(135deg,#e5232e,#246cff);
+}
+
+.main-photo img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    display:block;
+
+    border-radius:23px;
+}
+
+/* =========================
+   GALERÍA
+========================= */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.photo{
+    padding:8px;
+    border-radius:25px;
+
+    background:#10141c;
+
+    border:1px solid #27344a;
+
+    transition:.3s;
+}
+
+.photo:hover{
+    transform:translateY(-5px);
+}
+
+.photo img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+
+    border-radius:18px;
+}
+
+.caption{
+    padding:12px 8px 5px;
+    text-align:center;
+    color:#ddd;
+    line-height:1.5;
+}
+
+/* =========================
+   CARTAS
+========================= */
+
+.letter{
+    margin:25px 0;
+    padding:30px;
+
+    border-radius:28px;
+
+    background:
+      linear-gradient(145deg,#111827,#0b0e14);
+
+    border:1px solid #29364b;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.letter h3{
+    color:#ff3a46;
+    font-size:25px;
+}
+
+.letter p{
+    color:#eee;
+    font-size:18px;
+    line-height:1.9;
+}
+
+/* =========================
+   TARJETA ESPECIAL
+========================= */
+
+.special{
+    text-align:center;
+
+    padding:45px 25px;
+
+    border-radius:32px;
+
+    background:
+      linear-gradient(135deg,#101a2e,#160d14);
+
+    border:1px solid #34445e;
+}
+
+.special h2{
+    font-size:34px;
+}
+
+.special p{
+    font-size:19px;
+    line-height:1.8;
+}
+
+/* =========================
+   "CASI ALGO"
+========================= */
+
+.almost{
+    text-align:center;
+    padding:90px 20px;
+}
+
+.almost h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.almost .line{
+    width:100px;
+    height:3px;
+    margin:20px auto;
+    background:#e5232e;
+}
+
+.almost p{
+    max-width:650px;
+    margin:auto;
+    font-size:19px;
+    line-height:1.9;
+    color:#ddd;
+}
+
+/* =========================
+   FINAL
+========================= */
+
+.final{
+    min-height:70vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:30px;
+
+    background:
+      radial-gradient(circle,#152442,#07090d 70%);
+}
+
+.final h2{
+    font-size:40px;
+}
+
+.final p{
+    font-size:19px;
+    line-height:1.8;
+    color:#ddd;
+}
+
+.signature{
+    margin-top:35px;
+    color:#55adff;
+    font-size:25px;
+}
+
+/* =========================
+   COCHE ANIMADO
+========================= */
+
+.car{
+    position:fixed;
+    bottom:15px;
+    left:-120px;
+
+    font-size:55px;
+
+    animation:
+      drive 9s linear infinite;
+
+    z-index:100;
+}
+
+@keyframes drive{
+
+    0%{
+        left:-120px;
+    }
+
+    100%{
+        left:110%;
+    }
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:600px){
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .main-photo img{
+        height:300px;
+    }
+
+    .title{
+        font-size:28px;
+    }
+
+    .almost h2{
+        font-size:32px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- CARRITO QUE PASA POR LA PANTALLA -->
+
+<div class="car">🏎️💨</div>
+
+
+<!-- =========================
+     PORTADA
+========================= -->
+
+<div class="hero">
+
+<div class="hero-box">
+
+<div class="flag">
+🏁 🏎️ 🏁
+</div>
+
+<p class="tiny">
+Para alguien muy especial
+</p>
+
+<h1>
+
+Feliz día de los
+<br>
+
+<span class="red">
+Hot Wheels
+</span>
+
+<br>
+
+<span class="blue">
+hombrecito
+</span>
+
+❤️
+
+</h1>
+
+<p>
+
+No podía dejar pasar este día
+sin hacerte algo especialmente para ti.
+
+</p>
+
+<div class="heart">
+❤️
+</div>
+
+<p>
+
+Porque aunque seamos un
+<strong>"casi algo"</strong>...
+
+</p>
+
+<a href="#historia" class="button">
+Empieza la carrera 🏁
+</a>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     PRIMERA FOTO
+========================= -->
+
+<section>
+
+<div class="container">
+
+<h2 class="title">
+🏎️ Esto es <span>para ti</span>
+</h2>
+
+<div class="main-photo">
+
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Hot_Wheels_models.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     HISTORIA
+========================= -->
+
+<section id="historia">
+
+<div class="container">
+
+<h2 class="title">
+❤️ Mi <span>hombrecito</span>
+</h2>
+
+<div class="letter">
+
+<h3>
+No sé exactamente en qué momento...
+</h3>
+
+<p>
+
+No sé exactamente en qué momento
+te volviste alguien tan especial para mí,
+pero me gusta mucho tenerte en mi vida. ❤️
+
+</p>
+
+<p>
+
+Tal vez todavía somos un
+<strong>"casi algo"</strong>,
+pero contigo todo se siente diferente.
+
+</p>
+
+</div>
+
+
+<div class="letter">
+
+<h3>
+🏁 Si nuestra historia fuera una carrera...
+</h3>
+
+<p>
+
+Si nuestra historia fuera una carrera,
+definitivamente elegiría seguir recorriendo
+el camino contigo.
+
+</p>
+
+<p>
+
+Porque entre tantas personas,
+qué bonito fue coincidir contigo.
+
+</p>
+
+</div>
+
+
+<div class="letter">
+
+<h3>
+💙 Mi copiloto favorito
+</h3>
+
+<p>
+
+Eres mi persona favorita para reír,
+para pasarla bien, para hacer locuras
+y también para esos momentos tranquilos.
+
+</p>
+
+<p>
+
+Gracias por ser tú
+y por hacer que esta etapa sea tan bonita.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     GALERÍA
+========================= -->
+
+<section>
+
+<div class="container">
+
+<h2 class="title">
+🏎️ Tus <span>Hot Wheels</span>
+</h2>
+
+<div class="gallery">
+
+
+<div class="photo">
+
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/HW_GR_SUPRA.jpg">
+
+<div class="caption">
+🏎️ Una vueltita más contigo
+</div>
+
+</div>
+
+
+<div class="photo">
+
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/HW_SRT_DSC.jpg">
+
+<div class="caption">
+🏁 Siempre acelerando juntos
+</div>
+
+</div>
+
+
+<div class="photo">
+
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Rare_Hot_Wheels_van.jpg">
+
+<div class="caption">
+❤️ Para mi persona favorita
+</div>
+
+</div>
+
+
+<div class="photo">
+
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Tesla_Hotwheels.jpg">
+
+<div class="caption">
+💙 Una colección de momentos
+</div>
+
+</div>
+
+
+<div class="photo">
+
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Hot_Wheels_Modellauto.jpg">
+
+<div class="caption">
+🏎️ La carrera continúa...
+</div>
+
+</div>
+
+
+<div class="photo">
+
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Hot_Wheels_models.jpg">
+
+<div class="caption">
+🏁 Y todavía faltan muchas vueltas
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     MENSAJE ESPECIAL
+========================= -->
+
+<section>
+
+<div class="container">
+
+<div class="special">
+
+<div class="flag">
+🏁 ❤️ 🏁
+</div>
+
+<h2>
+Tal vez somos un "casi algo"...
+</h2>
+
+<p>
+
+pero eso no cambia lo especial
+que eres para mí.
+
+</p>
+
+<p>
+
+Me gusta tenerte,
+hablar contigo,
+reír contigo
+y compartir esta etapa.
+
+</p>
+
+<p>
+
+Y aunque todavía no sepamos
+exactamente qué somos...
+
+</p>
+
+<h2 class="blue">
+Me gusta lo que somos. ❤️
+</h2>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CASI ALGO
+========================= -->
+
+<div class="almost">
+
+<div class="flag">
+🏎️ 🏁 ❤️ 🏁 🏎️
+</div>
+
+<h2>
+Mi <span class="red">casi algo</span> ❤️
+</h2>
+
+<div class="line"></div>
+
+<p>
+
+No sé qué nos tenga preparado el futuro,
+pero por ahora me gusta compartir
+esta parte del camino contigo.
+
+</p>
+
+<p>
+
+Y si la vida fuera una carrera...
+
+<br>
+
+<strong>
+ojalá todavía nos queden muchas vueltas juntos.
+</strong>
+
+</p>
+
+</div>
+
+
+<!-- =========================
+     FINAL
+========================= -->
+
+<div class="final">
+
+<div>
+
+<div class="flag">
+🏁 🏎️ 🏁
+</div>
+
+<h2>
+
+Feliz día de los
+<span class="red">Hot Wheels</span>,
+<br>
+
+<span class="blue">hombrecito</span> ❤️
+
+</h2>
+
+<p>
+
+Espero que hoy sonrías mucho
+y que este pequeño detalle
+te recuerde lo especial que eres para mí.
+
+</p>
+
+<div class="signature">
+
+Con cariño,
+<br>
+tu casi algo ❤️
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
