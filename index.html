@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para mi hombrecito 🏎️❤️</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:#080a0f;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+/* PORTADA */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:30px 15px;
+    background:
+      radial-gradient(circle at top,#17243d,#080a0f 65%);
+}
+
+.hero-box{
+    width:100%;
+    padding:35px 20px;
+    border:2px solid #e51b23;
+    border-radius:30px;
+    box-shadow:0 0 30px rgba(229,27,35,.25);
+}
+
+.flags{
+    font-size:32px;
+    letter-spacing:5px;
+}
+
+.small{
+    color:#66baff;
+    font-size:17px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+h1{
+    font-size:42px;
+    margin:15px 0;
+    line-height:1.1;
+}
+
+.red{
+    color:#ff2935;
+}
+
+.blue{
+    color:#52aaff;
+}
+
+.subtitle{
+    font-size:20px;
+    line-height:1.7;
+    color:#eeeeee;
+}
+
+.heart{
+    font-size:45px;
+}
+
+/* BOTÓN */
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 25px;
+    background:#e51b23;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    box-shadow:0 5px 20px rgba(229,27,35,.35);
+}
+
+/* SECCIONES */
+
+section{
+    padding:70px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:30px;
+}
+
+.section-title span{
+    color:#2698ff;
+}
+
+/* FOTOS */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.photo{
+    background:#11151e;
+    padding:8px;
+    border-radius:20px;
+    border:1px solid #263247;
+}
+
+.photo img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    border-radius:15px;
+    display:block;
+}
+
+.photo p{
+    text-align:center;
+    color:#aaa;
+    margin:12px 5px;
+}
+
+/* CARTAS */
+
+.card{
+    background:linear-gradient(145deg,#111725,#0b0d13);
+    border:1px solid #27364d;
+    border-radius:25px;
+    padding:30px 25px;
+    margin:25px 0;
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
+}
+
+.card h3{
+    color:#ff3843;
+    font-size:25px;
+    margin-top:0;
+}
+
+.card p{
+    font-size:18px;
+    line-height:1.8;
+    color:#eeeeee;
+}
+
+/* MENSAJE */
+
+.message{
+    border-left:4px solid #2698ff;
+    padding:10px 25px;
+    margin:20px 0;
+}
+
+.message p{
+    font-size:19px;
+    line-height:1.8;
+}
+
+/* FRASE GRANDE */
+
+.big-message{
+    text-align:center;
+    padding:45px 20px;
+    border-radius:30px;
+    background:linear-gradient(135deg,#101827,#17101a);
+    border:1px solid #343e50;
+}
+
+.big-message h2{
+    font-size:32px;
+    line-height:1.3;
+}
+
+.big-message p{
+    font-size:19px;
+    line-height:1.8;
+}
+
+/* FINAL */
+
+.final{
+    text-align:center;
+    padding:80px 15px;
+}
+
+.final h2{
+    font-size:38px;
+}
+
+.final p{
+    font-size:19px;
+    line-height:1.8;
+    color:#ddd;
+}
+
+.signature{
+    color:#55aaff;
+    font-size:24px;
+    margin-top:30px;
+}
+
+/* MOVIL */
+
+@media(max-width:600px){
+
+    h1{
+        font-size:34px;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .photo img{
+        height:250px;
+    }
+
+    .section-title{
+        font-size:27px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- PORTADA -->
+
+<div class="hero">
+
+<div class="hero-box">
+
+<div class="flags">🏁 🏎️ 🏁</div>
+
+<p class="small">Para mi persona especial</p>
+
+<h1>
+Feliz día de los
+<span class="red">Hot Wheels</span>,
+<span class="blue">hombrecito</span> ❤️
+</h1>
+
+<p class="subtitle">
+Porque sé que te gustan los carros,
+pero quería hacerte algo que fuera
+un poquito más especial.
+</p>
+
+<div class="heart">❤️</div>
+
+<a href="#fotos" class="btn">
+Empieza la carrera 🏁
+</a>
+
+</div>
+
+</div>
+
+
+<!-- FOTOS -->
+
+<section id="fotos">
+
+<div class="container">
+
+<h2 class="section-title">
+🏎️ Un poquito de <span>Hot Wheels</span> para ti
+</h2>
+
+<div class="gallery">
+
+<div class="photo">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Hot_Wheels_models.jpg">
+<p>Porque una colección nunca es suficiente 🏎️</p>
+</div>
+
+<div class="photo">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/HW_GR_SUPRA.jpg">
+<p>Una vueltita más ❤️</p>
+</div>
+
+<div class="photo">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/HW_SRT_DSC.jpg">
+<p>Velocidad, carros y tú 🏁</p>
+</div>
+
+<div class="photo">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Rare_Hot_Wheels_van.jpg">
+<p>Para mi hombrecito favorito 🫶</p>
+</div>
+
+<div class="photo">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Tesla_Hotwheels.jpg">
+<p>Una colección de momentos bonitos ✨</p>
+</div>
+
+<div class="photo">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Hot_Wheels_Modellauto.jpg">
+<p>Y esta carrera apenas comienza 🏎️</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CARTA -->
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+💌 Para mi <span>hombrecito</span>
+</h2>
+
+<div class="card">
+
+<h3>🏁 No sé exactamente en qué momento...</h3>
+
+<p>
+No sé exactamente en qué momento te volviste
+alguien tan especial para mí, pero me gusta
+mucho tenerte en mi vida. ❤️
+</p>
+
+<p>
+Tal vez todavía somos un
+<strong>"casi algo"</strong>,
+pero contigo todo se siente diferente.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>❤️ Si nuestra historia fuera una carrera...</h3>
+
+<p>
+Si nuestra historia fuera una carrera,
+definitivamente elegiría seguir recorriendo
+el camino contigo.
+</p>
+
+<p>
+Porque entre tantas personas,
+qué bonito fue coincidir contigo.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🏎️ Mi copiloto favorito</h3>
+
+<p>
+Eres mi persona favorita para reír,
+para pasarla bien, para las locuras
+y también para esos momentos tranquilos
+en los que simplemente estar contigo
+se siente bonito.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FRASE -->
+
+<section>
+
+<div class="container">
+
+<div class="big-message">
+
+<div class="flags">🏁 ❤️ 🏁</div>
+
+<h2>
+"Tal vez somos un casi algo..."
+</h2>
+
+<p>
+pero eso no cambia lo especial que eres para mí.
+</p>
+
+<p>
+Gracias por cada conversación,
+cada risa, cada momento y cada recuerdo. ❤️
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MENSAJE FINAL -->
+
+<section>
+
+<div class="container">
+
+<div class="message">
+
+<p>
+No sé qué nos tenga preparado el futuro,
+pero por ahora me gusta compartir esta etapa
+contigo.
+</p>
+
+<p>
+Y aunque no tenga un nombre exacto lo que somos,
+sí sé que eres alguien que quiero mucho. ❤️
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FINAL -->
+
+<div class="final">
+
+<div class="flags">🏎️ 🏁 🏎️</div>
+
+<h2>
+Feliz día de los Hot Wheels,
+<span class="red">hombrecito</span> ❤️
+</h2>
+
+<p>
+Espero que hoy sonrías mucho
+y que nunca te falten motivos
+para seguir acelerando. 🏁
+</p>
+
+<div class="signature">
+Con cariño, tu casi algo ❤️
+</div>
+
+</div>
+
+
+</body>
+</html>
